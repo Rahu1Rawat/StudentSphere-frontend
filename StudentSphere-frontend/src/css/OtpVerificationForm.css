@@ -1,0 +1,71 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  z-index: 1;
+}
+
+.parent-div {
+  border: 1px solid #005d6e;
+  width: 420px;
+  height: 450px;
+  background-color: #fbfcf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container-div {
+  width: 370px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.container-div img {
+  position: absolute;
+  top: 2.9em;
+  right: 2em;
+}
+
+.container-div h3 {
+  margin-top: 1em;
+}
+
+.container-div p {
+  margin-top: 1em;
+}
+
+.container-div input {
+  border: 1px solid black;
+  margin-top: 2em;
+  width: 100%;
+  height: 25%;
+  text-align: center;
+}
+
+.container-div a {
+  color: #4cd1d9;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.resend-code {
+  line-height: 0.1;
+}
+.resend-code a {
+  cursor: pointer;
+}

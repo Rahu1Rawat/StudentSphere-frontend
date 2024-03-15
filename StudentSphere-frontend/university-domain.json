@@ -1,0 +1,74 @@
+
+[{
+    "web_pages": [
+        "https://www.upes.ac.in/"
+    ],
+    "name": "University of Petroleum and Energy Studies",
+    "alpha_two_code": "IN",
+    "state-province": "Dehradun",
+    "domains": [
+        "upes.ac.in"
+    ],
+    "country": "India"
+},
+{
+    "web_pages": [
+        "http://www.nls.ac.in/"
+    ],
+    "name": "National Law School of India University",
+    "alpha_two_code": "IN",
+    "state-province": null,
+    "domains": [
+        "nls.ac.in"
+    ],
+    "country": "India"
+},
+{
+    "web_pages": [
+        "http://www.nmims.edu/"
+    ],
+    "name": "Narsee Monjee Institute of Management Studies",
+    "alpha_two_code": "IN",
+    "state-province": null,
+    "domains": [
+        "nmims.edu"
+    ],
+    "country": "India"
+},
+{
+    "web_pages": [
+        "http://www.padmavatiwomen-univ.org/"
+    ],
+    "name": "Sri Padmavati Women's University",
+    "alpha_two_code": "IN",
+    "state-province": null,
+    "domains": [
+        "padmavatiwomen-univ.org"
+    ],
+    "country": "India"
+},
+{
+    "web_pages": [
+        "http://www.ahtcm.edu.cn/"
+    ],
+    "name": "Anhui University of Traditional Chinese Medicine",
+    "alpha_two_code": "CN",
+    "state-province": null,
+    "domains": [
+        "ahtcm.edu.cn"
+    ],
+    "country": "China"
+},
+{
+    "web_pages": [
+        "http://www.camosun.bc.ca/"
+    ],
+    "name": "Camosun College",
+    "alpha_two_code": "CA",
+    "state-province": "British Columbia",
+    "domains": [
+        "camosun.bc.ca"
+    ],
+    "country": "Canada"
+}
+]

@@ -1,0 +1,106 @@
+/* ! Font */
+@font-face {
+  font-family: "Ascender Sans W01 Regular";
+  src: url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.eot");
+  src: url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.svg#Ascender Sans W01 Regular")
+      format("svg");
+}
+/* ! Font */
+
+.sidebar-home {
+  background-color: #fcfcfc;
+  width: 225px;
+  height: 470px;
+  padding: 15px;
+  overflow-y: hidden;
+  margin-right: 5%;
+  flex-shrink: 0;
+}
+
+.sidebar-home:hover {
+  overflow: auto; /* Show the scrollbar when hovering */
+}
+
+.post-btn button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid red;
+  background-color: white;
+  cursor: pointer;
+}
+
+.h4-following {
+  color: #bcbcc0;
+  font-family: "Ascender Sans W01 Regular", sans-serif;
+}
+
+.industries {
+  font-family: "Ascender Sans W01 Regular", sans-serif;
+}
+.industries li {
+  list-style-type: none;
+}
+
+.job-groups {
+  font-family: "Ascender Sans W01 Regular", sans-serif;
+}
+.job-groups li {
+  list-style-type: none;
+}
+
+.general-topics {
+  font-family: "Ascender Sans W01 Regular", sans-serif;
+}
+.general-topics li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0.5em;
+  position: relative;
+}
+
+ul::before {
+  content: "";
+  border-left: 1px solid #bcbcc0;
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+
+ul li {
+  padding-left: 0.8em;
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+}
+p a,
+ul li a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the same color as the parent element */
+}
+.industries-li a:hover,
+.jobGroups-li a:hover,
+.generalTopics-li a:hover {
+  color: red;
+}
+p a:hover {
+  color: #0a4d8c;
+}
+
+@media (max-width: 730px) {
+  .sidebar-home {
+    display: none;
+  }
+}

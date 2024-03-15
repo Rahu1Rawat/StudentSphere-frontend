@@ -1,0 +1,96 @@
+
+.LogInForm-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.LogInForm-container {
+  background-color: #ffffff;
+  width: 480px;
+  height: 460px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.LogIn-closeParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.LogInForm-p {
+  font-weight: bolder;
+  font-size: 26px;
+}
+.Cross-svg svg {
+  height: 26px;
+  width: auto;
+  cursor: pointer;
+}
+
+.LogInForm-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.LogInForm-details input {
+  border: 1px solid #e5e3e8;
+  text-indent: 10px;
+  color: #e5e3e8;
+}
+.LogInForm-details input,
+.LogInForm-details button {
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.LogInForm-details .LogIn-loginButton {
+  margin-bottom: 0;
+  border: none;
+  background-color: #94959b;
+}
+.LogIn-codeButton {
+  background-color: #00accd;
+  border: none;
+}
+.LogInOR-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.LogInOR-container p {
+  flex-shrink: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.LogInOR-container::before,
+.LogInOR-container::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.2);
+  height: 1px;
+}
