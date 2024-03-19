@@ -36,6 +36,7 @@ function TopNavigation() {
           </NavLink>
         </li>
       </ul>
+      <div className="navItemsBorder"></div>
     </div>
   );
 }

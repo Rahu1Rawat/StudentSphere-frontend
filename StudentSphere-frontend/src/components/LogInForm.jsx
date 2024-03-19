@@ -1,5 +1,51 @@
+import { useEffect, useState } from "react";
 import "../css/LogInForm.css";
-const LogInForm = ({ setIsActiveForm }) => {
+import Spinner from "react-bootstrap/Spinner";
+
+const LogInForm = ({ setIsActiveForm, handleLoginSuccess }) => {
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+  const [isButtonDisabled, setButtonDisabled] = useState(true);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [isLoginLoading, setLoginLoading] = useState(false);
+
+  useEffect(() => {
+    if (loginPassword) {
+      setButtonDisabled(false);
+    } else {
+      setButtonDisabled(true);
+    }
+  }, [loginPassword]);
+
+  const handleLogin = async () => {
+    setLoginLoading(true);
+    try {
+      // Artificial delay for testing
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
+      const response = await fetch("http://localhost:3000/login", {
+        method: "POST",
+        body: JSON.stringify({
+          email: loginEmail,
+          password: loginPassword,
+        }),
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.message);
+      }
+      console.log(data.message);
+      setIsActiveForm(null);
+      handleLoginSuccess()
+    } catch (error) {
+      console.error("Error", error);
+      setErrorMessage(error.message);
+    } finally {
+      setLoginLoading(false);
+    }
+  };
+
   return (
     <div className="LogInForm-overlay">
       <div className="LogInForm-container">
@@ -27,9 +73,32 @@ const LogInForm = ({ setIsActiveForm }) => {
           </div>
         </div>
         <div className="LogInForm-details">
-          <input type="text" placeholder="Enter your student email" />
-          <input type="text" placeholder="Password" />
-          <button className="LogIn-loginButton">LOG IN</button>
+          <input
+            type="text"
+            placeholder="Enter your student email"
+            value={loginEmail}
+            onChange={(e) => setLoginEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={loginPassword}
+            onChange={(e) => setLoginPassword(e.target.value)}
+          />
+          {errorMessage && (
+            <div className="loginError-message"> {errorMessage}</div>
+          )}
+          <button
+            className="LogIn-loginButton"
+            onClick={handleLogin}
+            disabled={isButtonDisabled || isLoginLoading} // Disable while loading
+          >
+            {isLoginLoading ? (
+              <Spinner animation="border" size="sm" /> // Show spinner when loading
+            ) : (
+              "LOG IN"
+            )}
+          </button>
           <div className="LogInOR-container">
             <p>OR</p>
           </div>

@@ -5,7 +5,7 @@ import closeIcon from "../images/icons/cancel.png";
 import mark from "../images/icons/mark.png";
 import OtpVerificationForm from "../components/OtpVerificationForm";
 import { useState } from "react";
-import "../css/SignUpForm.css"
+import "../css/SignUpForm.css";
 
 function SignUpForm({
   activeForm,
@@ -13,7 +13,10 @@ function SignUpForm({
   setInputValue,
   setIsActiveForm,
   clearInputField,
+  handleLoginSuccess,
 }) {
+  console.log("handleLoginSuccess in SignUpForm:", handleLoginSuccess);
+
   const [accessStatus, setAccessStatus] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -107,6 +110,7 @@ function SignUpForm({
           <OtpVerificationForm
             email={inputValue}
             setInput={setInputValue}
+            handleLoginSuccess={handleLoginSuccess}
           />
         ) : (
           <>

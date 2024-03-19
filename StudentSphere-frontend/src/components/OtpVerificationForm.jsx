@@ -8,7 +8,10 @@ function OtpVerificationForm({
   setIsActiveForm,
   setInputValue,
   clearInputField,
+  handleLoginSuccess,
 }) {
+  console.log("handleLoginSuccess in SignUpForm:", handleLoginSuccess);
+
   const [otp, setOtp] = useState("");
   const [verificationMessage, setVerificationMessage] = useState("");
 
@@ -62,7 +65,12 @@ function OtpVerificationForm({
           />
           {verificationMessage === "OTP verified" ? (
             <>
-              <CreateAccount />
+              <CreateAccount
+                email={email}
+                setIsActiveForm={setIsActiveForm}
+                clearInputField={clearInputField}
+                handleLoginSuccess={handleLoginSuccess}
+              />
               <p style={{ marginBottom: "1em" }}>{verificationMessage}</p>
             </>
           ) : (
