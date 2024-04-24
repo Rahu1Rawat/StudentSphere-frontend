@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Ascender Sans W01 Regular";
+  src: url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.eot");
+  src: url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.svg#Ascender Sans W01 Regular")
+      format("svg");
+}
+
+.PostCard2-parent {
+  font-family: "Ascender Sans W01 Regular", sans-serif;
+  background-color: white;
+  width: 780px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  margin-top: 10px;
+  margin-left: 350px;
+}
+.PostCard2-parent:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+}
+
+.top-leftCorner-parent {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: bisque; */
+}
+
+.top-leftCorner {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 40px;
+  flex-wrap: wrap;
+}
+
+.uni-circle-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e9ebee;
+}
+.tt-cu {
+  height: 40px;
+}
+.topic-time {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.topic-time h4 {
+  margin: 0 0 5.86px 0; /* top right bottom left */
+}
+
+.topic-time p {
+  margin: 0 0 5.86px 0; /* top right bottom left */
+  color: #b5b6b9;
+  font-size: small;
+  font-weight: bold;
+}
+.PostCard2-cu {
+  font-size: small;
+  color: #9b9a9e;
+}
+
+.postCard-dotMenu {
+  width: 40px;
+  height: 40px;
+}
+
+.PostCard2-title {
+  /* background-color: blue; */
+  margin-top: 20px;
+}
+.PostCard2-title h2 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.PostCard2-content {
+  /* background-color: goldenrod; */
+  margin-top: 20px;
+}
+
+.PostCard2-content p {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #75737b;
+}
+.PostCard2-BottomParent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomLeft-SVG svg {
+  margin-right: 10px;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.bottomRight-SVG svg {
+  width: 1.2em;
+  height: 1.2em;
+}

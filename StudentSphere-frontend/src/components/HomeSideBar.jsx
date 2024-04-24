@@ -1,10 +1,13 @@
 import "../css/HomeSideBar.css";
 
-export const HomeSideBar = () => {
+export const HomeSideBar = ({
+  handleShowWritePostCard,
+  handleShowReusableOverlay,
+}) => {
   return (
     <div className="sidebar-home">
       <div className="post-btn">
-        <button> WRITE A POST</button>
+        <button onClick={handleShowWritePostCard}> WRITE A POST</button>
       </div>
       <div className="h4-following">
         <h3>Following</h3>

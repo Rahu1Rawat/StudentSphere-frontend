@@ -1,0 +1,51 @@
+.JobPageProfileComponent-parent {
+  margin-top: 2%;
+  width: 557px;
+  height: 144px;
+  border: 1px solid #eff0f4;
+  border-radius: 10px;
+}
+
+.strong-cross {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3px;
+}
+
+.JobPage-Strong {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.JobPage-crossIcon img {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.JobPage-createProfile-desc-btn-photo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.JobPage-createProfile-desc-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.JobPage-createProfile-desc-btn span{
+ font-size: small;
+}
+
+.JobPage-createProfile-desc-btn button {
+  margin-top: 10px;
+  width: 134px;
+  height: 40px;
+  border: none;
+}
+
+.JobPage-createProfile-photo img {
+  width: 90px;
+  height: 90px;
+}

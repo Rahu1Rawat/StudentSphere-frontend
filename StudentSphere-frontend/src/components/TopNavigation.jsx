@@ -6,33 +6,28 @@ function TopNavigation() {
     <div className="mainNavigation">
       <ul className="navItems">
         <li>
-          <NavLink className="hover" activeClassName="active" to="/" exact>
+          <NavLink className="hover" activeclassname="active" to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink className="hover" activeClassName="active" to="/internships">
-            Internship
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="hover" activeClassName="active" to="/campus-jobs">
+          <NavLink className="hover" activeclassname="active" to="/campus-jobs">
             Jobs
           </NavLink>
         </li>
         <li>
-          <NavLink className="hover" activeClassName="active" to="/courses">
+          <NavLink className="hover" activeclassname="active" to="/courses">
             Courses
           </NavLink>
         </li>
         <li>
-          <NavLink className="hover" activeClassName="active" to="/trends">
+          <NavLink className="hover" activeclassname="active" to="/trends">
             Trends
           </NavLink>
         </li>
         <li>
-          <NavLink className="hover" activeClassName="active" to="/portfolios">
-            Portfolios
+          <NavLink className="hover" activeclassname="active" to="/portfolios">
+            Reviews
           </NavLink>
         </li>
       </ul>
@@ -42,4 +37,3 @@ function TopNavigation() {
 }
 
 export default TopNavigation;
-

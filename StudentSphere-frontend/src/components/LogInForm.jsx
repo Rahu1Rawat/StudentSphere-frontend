@@ -35,9 +35,12 @@ const LogInForm = ({ setIsActiveForm, handleLoginSuccess }) => {
       if (!response.ok) {
         throw new Error(data.message);
       }
+      // Store the token securely (e.g., in local storage)
+      localStorage.setItem("token", data.token);
+
       console.log(data.message);
       setIsActiveForm(null);
-      handleLoginSuccess()
+      handleLoginSuccess();
     } catch (error) {
       console.error("Error", error);
       setErrorMessage(error.message);

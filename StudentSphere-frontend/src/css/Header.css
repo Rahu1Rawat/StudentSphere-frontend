@@ -5,6 +5,9 @@
   gap: 5%;
   width: 100%;
   box-sizing: border-box;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
 }
 .img-searchBar {
   display: flex;

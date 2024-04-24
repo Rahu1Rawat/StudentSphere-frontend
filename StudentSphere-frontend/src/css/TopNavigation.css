@@ -13,6 +13,11 @@
       format("svg");
 }
 
+.mainNavigation {
+  margin-top: 70px;
+  background-color: white;
+  z-index: 1;
+}
 .navItems {
   display: flex;
   list-style: none;
@@ -60,8 +65,10 @@
   }
 }
 
-.mainNavigation::before, .mainNavigation::after,
-.mainNavigation *::before, .mainNavigation *::after {
+.mainNavigation::before,
+.mainNavigation::after,
+.mainNavigation *::before,
+.mainNavigation *::after {
   content: none;
 }
 .navItemsBorder {

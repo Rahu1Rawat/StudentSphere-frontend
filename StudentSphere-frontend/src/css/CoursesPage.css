@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Ascender Sans W01 Regular";
+  src: url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.eot");
+  src: url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.svg#Ascender Sans W01 Regular")
+      format("svg");
+}
+
+.CoursesPage-parent {
+  margin: 100px 100px 100px 100px;
+  font-family: "Ascender Sans W01 Regular", sans-serif;
+}
+
+.CoursesPage-uniStdImg img {
+  margin: 0;
+  height: 700px;
+  width: 700px;
+}
+
+.CoursesPage-uniStdImg-about {
+  display: flex;
+  align-items: center;
+}
+
+.CoursesPage-about {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 600px;
+}
+
+.CoursesPage-about-AboutUsSpan {
+  background-color: #e7deff;
+  font-size: large;
+  font-weight: bold;
+  color: #6a64ed;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CoursesPage-about-span2 {
+  color: #5f6c76;
+  font-size: 70px;
+  margin-top: 20px;
+}
+
+.CoursesPage-about-span3 {
+  color: #8d969c;
+  font-size: larger;
+  margin-top: 20px;
+}
+
+.CoursesPage-about-span4 {
+  font-size: larger;
+  margin-top: 20px;
+}
+
+.CoursesPage-about-btn {
+  background-color: #6a64ed;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.CoursesPage-Popular-UniList {
+  background-color: #e7deff;
+  font-size: large;
+  font-weight: bold;
+  color: #6a64ed;
+  border-radius: 20px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CoursesPage-Popular-Universities {
+  color: #5f6c76;
+  font-size: 50px;
+}
+
+.CoursesPage-Popular-Unis-top {
+  display: flex;
+  align-items: center;
+}
+
+.CoursesPage-Popular-Unis-topRight span {
+  margin-left: 150px;
+  color: #5f6c76;
+
+}
+
+.CoursesPage-Popular-Unis-topRight button {
+  margin-left: 180px;
+  background-color: #E64E7C;
+  color: white;
+  border: none;
+  width: 180px;
+  height: 40px;
+  font-size: large;
+}
