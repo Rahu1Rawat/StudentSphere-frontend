@@ -1,3 +1,4 @@
+import { CoursesPageUniCard } from "../pages components/CoursesPageUniCard";
 import "../src/css/CoursesPage.css";
 import coursesPageUniStd from "../src/images/Random_Pictures/coursesPageUniStd.png";
 export const CoursesPage = () => {
@@ -15,9 +16,11 @@ export const CoursesPage = () => {
           <span className="CoursesPage-about-span3">
             Forging relationships between Universities and Students.
           </span>
-          <span className="CoursesPage-about-span4">Hello</span>
-          <span className="CoursesPage-about-span4">Namaste</span>
-          <span className="CoursesPage-about-span4">Pranaam</span>
+          <span className="CoursesPage-about-span4">
+            Explore variety education
+          </span>
+          <span className="CoursesPage-about-span4">Re-imagined</span>
+          <span className="CoursesPage-about-span4">One place</span>
           <button className="CoursesPage-about-btn">More</button>
         </div>
       </div>
@@ -32,6 +35,21 @@ export const CoursesPage = () => {
           <span> Forging relationships between Universities and Students.</span>
           <button>View All Universities</button>
         </div>
+      </div>
+      <div className="CoursesPageUniCard-parent-div">
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+        <CoursesPageUniCard />
+
+
       </div>
     </div>
   );

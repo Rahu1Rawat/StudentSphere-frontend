@@ -20,16 +20,6 @@ function TopNavigation() {
             Courses
           </NavLink>
         </li>
-        <li>
-          <NavLink className="hover" activeclassname="active" to="/trends">
-            Trends
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="hover" activeclassname="active" to="/portfolios">
-            Reviews
-          </NavLink>
-        </li>
       </ul>
       <div className="navItemsBorder"></div>
     </div>
